@@ -1,0 +1,119 @@
+/* responsive Mobile */
+@media only screen and (max-width: 768px) {
+  .container{
+    padding: 0 30px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  header .bottom-header ul {
+    display: none;  
+  }
+
+  header .bottom-header {
+    padding: 15px 20px;
+  }
+
+  .hero h1 {
+    white-space: nowrap;
+    font-size: 30px;
+  }
+
+  .sponsores .card:nth-child(n+4) {
+    display: none;
+  }
+
+  .sponsores {
+    padding: 10px;
+  }
+
+  .image-container {
+  height: auto;
+  min-height: 300px;
+  }
+
+  .grid-3col,
+  .grid-col2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-card, .courses-card {
+    width: 100%;
+  }
+
+  .course .courses-card .top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .course .courses-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pricing .title {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .pricing .sub-container,
+  .questions .sub-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer .footer-top {
+  flex-direction: column;
+  gap: 50px;
+  }
+
+  footer .footer-right{
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .courses .images img {
+   width: 100px;
+   height: auto;
+  }
+
+  .curriculum .row {
+    flex-direction: column !important;
+    gap: 0 !important; 
+  }
+
+  .curriculum-box {
+    border-bottom: 1px solid #F1F1F3;
+  }
+
+  .curriculum-box:last-child {
+    border-bottom: none;
+  }
+
+  .curriculum-box::after {
+    display: none;
+  }
+
+  .innovation .row{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Responsive laptop */
+@media (max-width: 1280px) {
+
+  header .bottom-header {
+    padding: 20px 40px !important;
+  }
+
+  .curriculum-box {
+    flex: 1 1 33.33%; 
+    border-bottom: 1px solid #F1F1F3;
+  }
+
+  .sub-container {
+    padding: 40px !important;
+  }
+}
